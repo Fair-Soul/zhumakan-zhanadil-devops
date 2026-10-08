@@ -1,0 +1,2 @@
+This is a public file.
+The owner can read and write it, group and others can only read it (chmod 644).

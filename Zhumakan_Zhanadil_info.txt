@@ -1,0 +1,5 @@
+Name: Zhanadil
+Surname: Zhumakan
+Group: IT2-2304
+Student ID: 38093
+Course: DevOps
