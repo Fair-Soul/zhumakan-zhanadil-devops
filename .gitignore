@@ -1,0 +1,13 @@
+# log files are created while the app is running
+*.log
+
+# local backups
+backup/
+
+# environment variables (can contain passwords and tokens)
+.env
+
+# Jenkins build output and python cache
+build/
+__pycache__/
+*.pyc

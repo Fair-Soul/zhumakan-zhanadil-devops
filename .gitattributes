@@ -1,0 +1,2 @@
+# always use LF line endings, otherwise bash scripts break if the repo is cloned on Windows
+* text=auto eol=lf
