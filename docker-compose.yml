@@ -1,0 +1,14 @@
+services:
+  app:
+    build: .
+    image: zhumakan-zhanadil-devops
+    container_name: zhumakan-zhanadil-container
+    # values come from .env file if it exists, otherwise defaults after ":-"
+    environment:
+      STUDENT_NAME: ${STUDENT_NAME:-Zhanadil}
+      STUDENT_SURNAME: ${STUDENT_SURNAME:-Zhumakan}
+      STUDENT_GROUP: ${STUDENT_GROUP:-IT2-2304}
+      STUDENT_ID: ${STUDENT_ID:-38093}
+    ports:
+      - "8000:8000"
+    restart: unless-stopped

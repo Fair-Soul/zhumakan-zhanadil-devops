@@ -1,0 +1,12 @@
+# files that are not needed inside the image
+.git
+.gitignore
+.gitattributes
+.env
+logs/
+backup/
+build/
+jenkins/
+Jenkinsfile
+docker-compose.yml
+*.md
