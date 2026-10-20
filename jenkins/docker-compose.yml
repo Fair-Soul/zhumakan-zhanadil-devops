@@ -1,0 +1,18 @@
+# Starts Jenkins in Docker: docker compose up -d --build (run inside this folder)
+services:
+  jenkins:
+    build: .
+    image: jenkins-with-docker
+    container_name: jenkins
+    # root is needed to use the docker socket of the host (ok for a local lab)
+    user: root
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    volumes:
+      - jenkins_home:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: unless-stopped
+
+volumes:
+  jenkins_home:
